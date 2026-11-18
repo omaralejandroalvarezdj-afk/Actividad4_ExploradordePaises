@@ -18,11 +18,17 @@ Para obtener los datos se utilizó fetch() junto con async/await.
 --Instrucciones de uso--
 
 1.Descargar los archivos del proyecto.
+
 2.Abrir la carpeta en Visual Studio Code.
+
 3.Ejecutar un servidor local con el comando python -m http.server 8000.
+
 4.Abrir http://localhost:8000/ en el navegador.
+
 5.Esperar a que carguen los países.
+
 6.Utilizar el buscador para encontrar un país o el filtro para seleccionar un continente.
+
 7.Utilizar los botones de paginación para consultar más resultados.
 
 Capturas de pantalla
