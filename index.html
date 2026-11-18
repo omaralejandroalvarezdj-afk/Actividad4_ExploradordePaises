@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Países - Práctica 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor encabezado">
+            <div>
+                <h1>Explorador de Países</h1>
+                <p>Conoce información de países alrededor del mundo.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="filtros" aria-label="Buscar y filtrar países">
+            <div class="campo">
+                <label for="busqueda">Buscar país</label>
+                <input type="search" id="busqueda" placeholder="Ejemplo: México, Japan, Canada...">
+            </div>
+            <div class="campo">
+                <label for="continente">Filtrar por región</label>
+                <select id="continente">
+                    <option value="">Todas las regiones</option>
+                    <option value="Africa">África</option>
+                    <option value="Americas">América</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europa</option>
+                    <option value="Oceania">Oceanía</option>
+                    <option value="Antarctic">Antártida</option>
+                </select>
+            </div>
+            <button id="limpiar" type="button">Limpiar filtros</button>
+        </section>
+
+        <section class="resultados" aria-label="Resultados de la búsqueda">
+            <div class="barra-resultados">
+                <h2>Países disponibles</h2>
+                <p id="contador" aria-live="polite">Cargando información...</p>
+            </div>
+            <div id="estado" class="estado" role="status" aria-live="polite">Consultando la API, espera un momento...</div>
+            <div id="tarjetas" class="tarjetas"></div>
+            <div class="paginacion" id="paginacion" hidden>
+                <button id="anterior" type="button">← Anterior</button>
+                <span id="paginaActual">Página 1</span>
+                <button id="siguiente" type="button">Siguiente →</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Práctica 4 · Laboratorio de Programación Web</p>
+        <p>Datos obtenidos de <a href="https://restcountries.com/" target="_blank" rel="noopener noreferrer">REST Countries</a>.</p>
+    </footer>
+</body>
+</html>
